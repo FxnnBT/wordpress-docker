@@ -1,3 +1,4 @@
+<?php $c = portfolio_content(); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -9,9 +10,13 @@
 <?php wp_body_open(); ?>
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="site-title" href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html($c['naam']); ?></a>
     <nav class="site-nav" aria-label="Hoofdmenu">
-      <?php wp_nav_menu(['theme_location' => 'primary', 'container' => false, 'fallback_cb' => false]); ?>
+      <ul>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+        <li><a href="<?php echo esc_url(home_url('/projecten/')); ?>">Projecten</a></li>
+        <li><a href="<?php echo esc_url(home_url('/over-mij/')); ?>">Over mij</a></li>
+      </ul>
     </nav>
   </div>
 </header>
