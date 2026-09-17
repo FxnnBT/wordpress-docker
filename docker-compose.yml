@@ -31,6 +31,7 @@ services:
     volumes:
       - wp_data:/var/www/html
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./theme:/var/www/html/wp-content/themes/portfolio
     networks:
       - wordpress_network
 
