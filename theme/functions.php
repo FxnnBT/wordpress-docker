@@ -16,6 +16,10 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('portfolio', get_stylesheet_uri(), [], wp_get_theme()->get('Version'));
 });
 
+add_action('after_setup_theme', function () {
+    add_theme_support('post-thumbnails');
+});
+
 // Bij activeren van het theme: maak de pagina's aan en zet nette URL's (/over-mij/).
 add_action('after_switch_theme', function () {
     foreach (['over-mij' => 'Over mij', 'projecten' => 'Projecten'] as $slug => $title) {

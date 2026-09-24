@@ -48,9 +48,26 @@
 
 
 
+
+Les 2
 ## Welke bestanden ik begrijp
 
 - Content.php
 - Style.css
 - Footer.php
 - Page-projecten.php
+
+
+
+Les 3
+
+## Functionaliteit getest:
+- Getest of page.php werkte en font-page.php. Die bestond al maar page.php nog niet dus die heb ik getest.
+
+
+## Wat verwachte ik:
+- Ik verwachte dat er niet zo veel zou gebeuren omdat de theme best wel op elkaar al is ingespeeld
+
+## wat er fout ging:
+
+- dat de page niet werkte omdat er al andere pages waren en stonden
