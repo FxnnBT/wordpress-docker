@@ -44,3 +44,13 @@
 - `style.css` is verplicht en moet een header met `Theme Name` hebben, anders ziet WordPress het theme niet.
 - Nette URL's (`/over-mij/`) werken alleen als de permalink-structuur is ingesteld én `.htaccess` de rewriteregels bevat.
 - Wachtwoorden in `.env` horen niet in een publieke repo; `.env.example` is de template.
+
+
+
+
+## Welke bestanden ik begrijp
+
+- Content.php
+- Style.css
+- Footer.php
+- Page-projecten.php
